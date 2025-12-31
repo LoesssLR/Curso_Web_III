@@ -1,0 +1,51 @@
+/* CSS Document */
+:root{
+    --primary: #110C0CFF;
+    --light: #FFFFFF;
+    --grey1: #EEEEEE;
+    --grey2: #F0F1F1;
+    --orange: #D6731D;
+    --lblue1: #559EE0;
+    --lblue2: #B4C5E5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.header .navbar {
+    background-color: rgba(255,255,255,0.5) !important;
+}
+
+body{
+    padding-top: 70px;
+}
+
+.formatDiv{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgBlock{
+    height: 150px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.divAnuncio{
+    background-color: var(--light);
+    border: thin solid var(--lblue1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--lblue2);
+    float: left;
+    margin: 8px;
+    padding-top: 5px;
+    text-align: center;
+    width: 160px;
+}

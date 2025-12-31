@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /{datosUsuarios}/{document=**} {
+      allow read: if true;
+      allow create: if request.resource.data.idemp is string &&
+                    request.resource.data.usuario is string &&
+                    request.resource.data.email is string;
+      allow update: if true;
+      allow delete: if false;
+    }
+
+    match /{datosZodiaco}/{document=**} {
+      allow read: if true;
+
+      allow create: if request.resource.data.posic is int &&
+                    request.resource.data.signo is string &&
+                    request.resource.data.rango is string &&
+                    request.resource.data.url is string &&
+                    request.resource.data.elemento is string &&
+                    request.resource.data.astroCelestial is string &&
+                    request.resource.data.piedraPreciosa is string;
+
+      allow update: if request.auth != null &&
+                    request.resource.data.posic is int &&
+                    request.resource.data.signo is string &&
+                    request.resource.data.rango is string &&
+                    request.resource.data.url is string &&
+                    request.resource.data.elemento is string &&
+                    request.resource.data.astroCelestial is string &&
+                    request.resource.data.piedraPreciosa is string;
+
+      allow delete: if false;
+    }
+  }
+  
+}

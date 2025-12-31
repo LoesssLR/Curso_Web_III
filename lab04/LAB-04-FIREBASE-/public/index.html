@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAB04 - Inicio</title>
+
+    <!-- Firebase -->
+    <script defer src="/__/firebase/12.5.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/12.5.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/12.5.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+
+    <!-- Bootstrap & Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section text-center">
+        <div class="container">
+          <h1 class="display-4 font-weight-bold mb-4">Bienvenido</h1>
+          <p class="lead mb-4">En nuestro catalogo encontras todo lo que buscas</p>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="container">
+        <div class="row">
+          <div class="col-md-4">
+  <div class="card feature-card text-center p-4">
+    <div class="feature-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170679.png" alt="Productos variados" width="80" height="80">
+    </div>
+    <h3>Productos variados</h3>
+    <p></p>
+  </div>
+</div>
+          <div class="col-md-4">
+            <div class="card feature-card text-center p-4">
+              <div class="feature-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/126/126169.png" alt="Precio competitivo" width="80" height="80">
+              </div>
+              <h3>Precios Competitivos</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card feature-card text-center p-4">
+               <div class="feature-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/310/310881.png" alt="Precio competitivo" width="80" height="80">
+              </div>
+              <h3>Calidad</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="products-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Productos Destacados</h2>
+            <p>Descubre nuestros productos más populares</p>
+          </div>
+          
+          <div class="row" id="productsContainer">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+          </div>
+
+          <!-- CTA Section -->
+          <div class="cta-section">
+            <div class="cta-content">
+              <h3>¿Quieres ver todos nuestros productos?</h3>
+              <p>Regístrate ahora y accede a todo nuestro catálogo</p>
+              <a href="signUpUsers.html" class="btn-cta">
+                Ver Más Productos <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="container my-5 py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="mb-4">Sobre Nosotros</h2>
+            <p class="mb-4">Nos destacamos por tener los mejores precios, calidad y variedad en todos los productos que estés buscando</p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://media.istockphoto.com/id/1542614865/es/foto/hombre-comprando-verduras-en-una-tienda-de-comestibles.jpg?s=612x612&w=0&k=20&c=Rx8YTSSk7Y8NZ1_nJOu-5bNyudZzpyly4DrfVRU2VAQ=">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>LAB04</h5>
+            <div class="social-icons mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h5>Enlaces</h5>
+            <div class="footer-links d-flex flex-column">
+              <a href="#">Inicio</a>
+              <a href="#">Registrarse</a>
+              <a href="#">Iniciar Sesión</a>
+            </div>
+          </div>
+      
+          <div class="col-md-3 mb-4">
+            <h5>Contacto</h5>
+            <div class="footer-links d-flex flex-column">
+              <a href="mailto:info@lab04.com">info@lab04.com</a>
+              <a href="tel:+1234567890">00000</a>
+              <p>Puntarenas, Costa Rica</p>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-light">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2025 LAB04. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/products/indexProducts.js"></script>
+  </body>
+</html>
