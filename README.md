@@ -59,15 +59,18 @@ técnica del curso.
 
 El repositorio se organiza por carpetas según el contenido visto en clase:
 
-/class_01 → PHP básico, estructuras y tipos de datos
-/class_02 → Procesamiento de CSV y Google Charts
-/class_03 → Gráficos y visualización de datos
-/class_04 → Acceso a BD, AJAX y hashing
-/lab04 → Laboratorios evaluados
-/mybox → Proyecto MyBox (gestor de archivos)
-/firebase → Pruebas y ejercicios con Firebase
-/php_03 → Prácticas avanzadas con PHP
-/Datos-PHP.csv → Archivo CSV utilizado en prácticas
+```text
+.
+├── class_01/        → PHP básico, estructuras y tipos de datos
+├── class_02/        → Procesamiento de CSV y Google Charts
+├── class_03/        → Gráficos y visualización de datos
+├── class_04/        → Acceso a BD, AJAX y hashing
+├── lab04/           → Laboratorios evaluados
+├── mybox/           → Proyecto MyBox (gestor de archivos)
+├── firebase/        → Pruebas y ejercicios con Firebase
+├── php_03/          → Prácticas avanzadas con PHP
+└── Datos - PHP.csv  → Archivo CSV utilizado en prácticas
+```
 
 ---
 
